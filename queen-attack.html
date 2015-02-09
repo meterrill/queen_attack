@@ -8,16 +8,30 @@
     <title>Queen Attack</title>
   </head>
   <body>
-    <div class="jumbotron">
-      <h1>Welcome to Queen Attack App!</h1>
-      <h3>For <span class="emphasis">true</span> chess masters</h3>
-    </div>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to Queen Attack App!</h1>
+        <h3>For <span class="emphasis">true</span> chess masters</h3>
+      </div>
 
-    <form>
-      <label for="queen-x-position">Enter Queen's "x" positon:</label>
-      <input type="text" name="queen-x-position">
-      <label for="queen-y-position">Enter Queen's "y" positon:</label>
-      <input type="text" name="queen-y-position">
-    </form>
+      <form id="queen-attack">
+        <label for="queen-x-position">Enter Queen's "x" positon:</label>
+        <input type="text" id="queen-x-position">
+        <br>
+        <label for="queen-y-position">Enter Queen's "y" positon:</label>
+        <input type="text" id="queen-y-position">
+        <br>
+        <label for="target-x-position">Enter Opponent's "x" positon:</label>
+        <input type="text" id="target-x-position">
+        <br>
+        <label for="target-y-position">Enter Opponent's "y" positon:</label>
+        <input type="text" id="target-y-position">
+        <br>
+
+        <button type="submit" class="btn btn-primary">Check</button>
+      </form>
+
+      <h4>Your orders are: <span class="orders"></span></h4>
+    </div>
   </body>
 </html>
